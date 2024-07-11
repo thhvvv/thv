@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 import urllib.request, json
-from app.models import Articles, Source
+from app.models import Article, Source
 
 # Getting api key
 apiKey = None

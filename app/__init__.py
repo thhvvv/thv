@@ -16,7 +16,7 @@ def create_app(config_name):
     bootstrap.init_app(app)
 
     # Register blueprints
-    from .main import main as main_blueprint
+    from .main import main_bp as main_blueprint
     app.register_blueprint(main_blueprint)
 
     # Import and initialize other components like models, etc.

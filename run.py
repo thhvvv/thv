@@ -1,5 +1,11 @@
 #!/usr/bin/python3
 from app import create_app
+import os
+
+if os.path.exists('.env'):
+    print('Importing environment from .env file')
+    from dotenv import load_dotenv
+    load_dotenv()
 
 # Create the app with the 'development' configuration
 app = create_app('development')

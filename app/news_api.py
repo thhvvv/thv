@@ -9,9 +9,9 @@ article_url = None
 
 def configure_request(app):
     global apiKey, base_url, article_url
-    apiKey = app.config['NEWS_API_KEY']
-    base_url = app.config['NEWS_API_BASE_URL']
-    article_url = app.config['NEWS_ARTICLE_URL']
+    apiKey = app.config['NYT_API_KEY']
+    top_stories_url = app.config['NYT_TOP_STORIES_URL']
+    article_url = app.config['NYT_ARTICLE_URL']
 
 def get_sources(category):
     get_source_url = base_url.format(category, apiKey)
